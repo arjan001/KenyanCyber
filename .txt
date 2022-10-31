@@ -1,5 +1,7 @@
  next process  to convert/port for use for any CMS
+ PENDING FIX THE SERVICE PAGE
 next include separate forms for submiting user forms
+Added a favicon on every page
 PENDING TO ADD TOOTIPS ON THE PAGE BY INCLUDING bootstrap.bundle.min.js / bootstrap.bundle.js which contains Popper in order for tooltips to work
 Ive included soo far a 404 page 
 the whole page is responsive  on all media devices
@@ -12,3 +14,4 @@ main color scheme on the cyber webpage is gren ,light,linear dark and blue
 included a simple gallery page
 included a  stick navigation bar on page scroll
 research about more vehicle makes to include in th logbook frm placeholder
+added a privacy polocy page,cookies concent page,terms and conditions page
