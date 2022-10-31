@@ -1,5 +1,7 @@
  next process  to convert/port for use for any CMS
  PENDING FIX THE SERVICE PAGE
+ PENDING PAYBILL METHOD IS IT LIPA NA MPESA OR BUY GOOD AND SERVICES TILL NUMBER
+ PENDING MAKING SURE ALL INPUT FIELDS ARE MANDATORY REQUIRED 
 next include separate forms for submiting user forms
 Added a favicon on every page
 PENDING TO ADD TOOTIPS ON THE PAGE BY INCLUDING bootstrap.bundle.min.js / bootstrap.bundle.js which contains Popper in order for tooltips to work
