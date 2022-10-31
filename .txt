@@ -15,3 +15,4 @@ included a simple gallery page
 included a  stick navigation bar on page scroll
 research about more vehicle makes to include in th logbook frm placeholder
 added a privacy polocy page,cookies concent page,terms and conditions page
+FIX FOOTERS and navbars ON THE APPLICATION PAGES FOLDER
