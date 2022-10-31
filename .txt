@@ -1,0 +1,14 @@
+ next process  to convert/port for use for any CMS
+next include separate forms for submiting user forms
+PENDING TO ADD TOOTIPS ON THE PAGE BY INCLUDING bootstrap.bundle.min.js / bootstrap.bundle.js which contains Popper in order for tooltips to work
+Ive included soo far a 404 page 
+the whole page is responsive  on all media devices
+custom header banners  and navbars for efficient user navigation
+for customer enquiries theres a contact form provided with a frequent asked questions accordion
+later add more accordion items on thre kra form page 
+Included loader on the page 
+main color scheme on the cyber webpage is gren ,light,linear dark and blue
+...change some js links to make page load faster
+included a simple gallery page
+included a  stick navigation bar on page scroll
+research about more vehicle makes to include in th logbook frm placeholder
