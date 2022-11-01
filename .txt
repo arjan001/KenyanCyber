@@ -2,6 +2,7 @@
  PENDING FIX THE SERVICE PAGE
  PENDING PAYBILL METHOD IS IT LIPA NA MPESA OR BUY GOOD AND SERVICES TILL NUMBER
  PENDING MAKING SURE ALL INPUT FIELDS ARE MANDATORY REQUIRED 
+ PENDING FAQ PAGE I NEED TO ADD ACCORDIONS
 next include separate forms for submiting user forms
 Added a favicon on every page
 PENDING TO ADD TOOTIPS ON THE PAGE BY INCLUDING bootstrap.bundle.min.js / bootstrap.bundle.js which contains Popper in order for tooltips to work
@@ -18,3 +19,7 @@ included a  stick navigation bar on page scroll
 research about more vehicle makes to include in th logbook frm placeholder
 added a privacy polocy page,cookies concent page,terms and conditions page
 FIX FOOTERS and navbars ON THE APPLICATION PAGES FOLDER
+THE COMPANY KRA PAGE BUTTON  IS DISSABLED
+IVE COMMENTED OUT THE LINK ON MEMBERSHIP PAGE ILL FRETHINK ON WHAT TO ADD ON THIS PAGE LATER ON
+
+THE META AND CONTENT KEY WORD NEED TO BE UPDATED FOR SEO SERVICES
