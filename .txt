@@ -21,5 +21,7 @@ added a privacy polocy page,cookies concent page,terms and conditions page
 FIX FOOTERS and navbars ON THE APPLICATION PAGES FOLDER
 THE COMPANY KRA PAGE BUTTON  IS DISSABLED
 IVE COMMENTED OUT THE LINK ON MEMBERSHIP PAGE ILL FRETHINK ON WHAT TO ADD ON THIS PAGE LATER ON
+ive updated the services paragraph on index page
+implemented text wrap to prevent the words from overflowing parent div
 
 THE META AND CONTENT KEY WORD NEED TO BE UPDATED FOR SEO SERVICES
