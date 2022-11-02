@@ -155,17 +155,17 @@
                     <h1 class="display-4 mb-4">Have Any Question?!</h1>
                     <p class="mb-4">Feel free to drop us a message within our contact form ,our customer service assisntant will try to reply to any of your enquiries.</p>
                    
-                    <form  action="" method="post" enctype="multipart/form-data" name="contactform">
+                    <form method="POST" enctype="multipart/form-data" name="contactform" id="contactform">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control bg-light border-0 rounded" id="name" placeholder="Your Name" name="name" required>
+                                    <input type="text" class="form-control bg-light border-0 rounded" id="name" placeholder="Full Name" name="name" required>
                                     <label for="name">Your Name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control bg-light border-0 rounded" id="email" placeholder="Your Email" name="email" required>
+                                    <input type="email" class="form-control bg-light border-0 rounded" id="email" placeholder="Your Email Address" name="email" required>
                                     <label for="email">Your Email</label>
                                 </div>
                             </div>
@@ -177,11 +177,12 @@
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control bg-light border-0 rounded" placeholder="Leave a message here" id="message" style="height: 100px" name="Message" required></textarea>
+                                    <textarea class="form-control bg-light border-0 rounded" placeholder="Leave a message here" id="message" style="height: 100px" name="message" required></textarea>
                                     <label for="message">Message</label>
                                 </div>
                             </div>
                             <div class="col-12">
+                                <div class="mt-3 mb-3 text-black" id="response" style="display: none;"></div>
                                 <button class="btn btn-primary w-100 py-3 border rounded" type="submit">Send Message</button>
                             </div>
                         </div>
@@ -233,7 +234,6 @@
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">About us</h5>
                     <p>Kenyancyber is an online portal that enables Kenyans to order for online KRA services and pay conveniently for those services rendered.We are driven by  customer centricity in helping millions of Kenyans daily in processing their KRA Services </p>
-
                 </div>
             </div>
         </div>
@@ -244,7 +244,6 @@
                         &copy;<a class="bf-danger .bg-gradient p-3" href="#">KAYTONS CYBER.</a>, All Right Reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
-
                         Powered by <a class="border-bottom" href="https://kaytontech.com/">Kayton Technologies</a>
                     </div>
                 </div>
@@ -253,10 +252,8 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-info btn-lg-square back-to-top" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

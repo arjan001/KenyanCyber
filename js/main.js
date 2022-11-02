@@ -84,11 +84,53 @@
             }
         }
     });
-
-
-
-
-
     
 })(jQuery);
 
+
+$("#contactform").submit(function(event) {
+    event.preventDefault();
+    var values = $(this).serialize();
+    document.getElementById('response').style.display = "block";
+    document.getElementById('response').style.color = "black";
+    document.getElementById('response').style.fontSize = "20px";
+    document.getElementById('response').style.fontWeight = "350";
+    document.getElementById('response').innerHTML = 'Sending...';
+    $.ajax({
+        url: "send.php",
+        type: "post",
+        data: values ,
+        success: function (response) {
+            console.log(response);
+            return;
+            if (response == "success") {
+                document.getElementById('response').style.display = "block";
+                document.getElementById('response').style.color = "green";
+                document.getElementById('response').style.fontSize = "20px";
+                document.getElementById('response').style.fontWeight = "350";
+                document.getElementById('response').innerHTML = 'Enquiry sent successfully';
+                document.getElementById('name').value = "";
+                document.getElementById('email').value = "";
+                document.getElementById('subject').value = "";
+                document.getElementById('message').value = "";
+                setTimeout(function() {
+                    $('#response').fadeOut('fast');
+                }, 5000);
+            }
+            else {
+                document.getElementById('response').style.display = "block";
+                document.getElementById('response').style.color = "red";
+                document.getElementById('response').style.fontSize = "20px";
+                document.getElementById('response').style.fontWeight = "350"
+                document.getElementById('response').innerHTML = 'Failed. Try again later';
+                document.getElementById('name').value = "";
+                document.getElementById('email').value = "";
+                document.getElementById('subject').value = "";
+                document.getElementById('message').value = "";
+                setTimeout(function() {
+                    $('#response').fadeOut('fast');
+                }, 5000);
+            }
+        }
+    });
+});
