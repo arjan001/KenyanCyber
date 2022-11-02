@@ -8,10 +8,10 @@
 	$mail->Port = 465;
 	$mail->isSMTP();
 	$mail->SMTPAuth=true;
-	$mail->Username='emmanuelmuema2@gmail.com';
-	$mail->Password='XXXXXX';
-	$mail->setFrom('emmanuelmuema2@gmail.com','Website Enquiry From KenyanCyber');
-	$mail->addAddress('emmanuelmuema52@gmail.com');
+	$mail->Username='arjannky@gmail.com';
+	$mail->Password='khasiala';
+	$mail->setFrom('arjannky@gmail.com','Website Enquiry From KenyanCyber');
+	$mail->addAddress('arjannky@gmail.com');
 	$mail->isHTML(true);
 	$mail->Subject=$_POST['subject'];
 	$mail->Body=$data;

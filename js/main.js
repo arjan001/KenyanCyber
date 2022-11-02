@@ -102,7 +102,7 @@ $("#contactform").submit(function(event) {
         data: values ,
         success: function (response) {
             console.log(response);
-            return;
+            // return;
             if (response == "success") {
                 document.getElementById('response').style.display = "block";
                 document.getElementById('response').style.color = "green";
