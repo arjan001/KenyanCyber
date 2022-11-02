@@ -1,28 +1,19 @@
 <?php
-	include('conn.php');
-	$result = mysqli_query($conn,"select * from smtp") or die(mysqli_error($conn));
-	$row = mysqli_fetch_assoc($result);
-	$fname = mysqli_real_escape_string($conn, $_POST['fname']);
-	$lname = mysqli_real_escape_string($conn, $_POST['lname']);
-	$email = mysqli_real_escape_string($conn, $_POST['email']);
-	$message = mysqli_real_escape_string($conn, $_POST['message']);
-	$pass = $row['pass'];
-	for($i=0;$i<5;$i++){$pass=base64_decode($pass);}
-	$data = "Name: ".$fname." ".$lname."<br /><br />Email: ".$email."<br /><br />Message<br />".$message;
+	$data = "Name: ".$_POST['name']."<br /><br />Email: ".$_POST['email']."<br /><br />Message<br />".$_POST['message'];
 	require 'phpmailer/PHPMailerAutoload.php';
 	$mail= new PHPMailer;
-	//$mail->SMTPDebug = 4;
+	$mail->SMTPDebug = 1;
 	$mail->SMTPSecure = 'ssl';
-	$mail->Host = $row['host'];
-	$mail->Port = $row['port'];
+	$mail->Host = 'smtp.gmail.com';
+	$mail->Port = 465;
 	$mail->isSMTP();
 	$mail->SMTPAuth=true;
-	$mail->Username=$row['user'];
-	$mail->Password=$pass;
-	$mail->setFrom($row['fro'],'Website Enquiry From Clifford');
-	$mail->addAddress($row['addr']);
+	$mail->Username='emmanuelmuema2@gmail.com';
+	$mail->Password='XXXXXX';
+	$mail->setFrom('emmanuelmuema2@gmail.com','Website Enquiry From KenyanCyber');
+	$mail->addAddress('emmanuelmuema52@gmail.com');
 	$mail->isHTML(true);
-	$mail->Subject='Inquiry from the website';
+	$mail->Subject=$_POST['subject'];
 	$mail->Body=$data;
 	if(!$mail->send()) {
 		echo "failed";
