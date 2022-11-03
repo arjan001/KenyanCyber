@@ -11,8 +11,8 @@
 	$mail->Username='test@smartcityplots.co.ke';
 	$mail->Password='^Q&(;rQfBGEF';
 	$mail->setFrom('test@smartcityplots.co.ke','Website Enquiry From KenyanCyber');
-    $mail->addAddress('abedimuange@gmail.com');
-    $mail->addAddress('emmanuelmuema52@gmail.com');
+    // $mail->addAddress('abedimuange@gmail.com');
+    // $mail->addAddress('emmanuelmuema52@gmail.com');
     $mail->addAddress('nyongesaedwin018@gmail.com');
 	$mail->isHTML(true);
 	$mail->Subject=$_POST['subject'];
