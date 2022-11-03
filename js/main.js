@@ -97,7 +97,7 @@ $("#contactform").submit(function(event) {
     document.getElementById('response').style.fontWeight = "350";
     document.getElementById('response').innerHTML = 'Sending...';
     $.ajax({
-        url: "send copy.php",
+        url: "send.php",
         type: "post",
         data: values ,
         success: function (response) {
