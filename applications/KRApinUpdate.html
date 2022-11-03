@@ -138,18 +138,18 @@
 
     <!-- KRA FORM BEGINS HERE -->
     <div class="container-sm">
-        <form class="row g-3 border border-1 w-75 mx-auto">
+        <form class="row g-3 border border-1 w-75 mx-auto" method="POST" action="" enctype="multipart/form-data" name="krapinupdate" id="krapinupdate" >
             <div class="col-md-4 p-2 " >
               <label for="inputEmail4" class="form-label">firstName</label>
-              <input type="text" class="form-control" id="fname">
+              <input type="text" class="form-control" id="fname" required>
             </div>
             <div class="col-md-4 p-2 " >
               <label for="inputPassword4" class="form-label">MiddleName</label>
-              <input type="text" class="form-control" id="mname">
+              <input type="text" class="form-control" id="mname" required>
             </div>
             <div class="col-md-4 p-2 " >
               <label for="inputPassword4" class="form-label">lastName</label>
-              <input type="text" class="form-control" id="lname">
+              <input type="text" class="form-control" id="lname" required>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">mpesa transaction code</label>
@@ -157,31 +157,31 @@
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">Id Number</label>
-              <input type="number" class="form-control" id="idnumber" placeholder="11243565">
+              <input type="number" class="form-control" id="idnumber" placeholder="11243565" required>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">Date of Birth</label>
-              <input type="text" class="form-control" id="dob"placeholder="24/10/1980">
+              <input type="text" class="form-control" id="dob"placeholder="24/10/1980" required>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">Mobile Number</label>
-              <input type="number" class="form-control" id="mobNumber" placeholder="07123456789">
+              <input type="number" class="form-control" id="mobNumber" placeholder="07123456789" required>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">Occupation</label>
-              <input type="text" class="form-control" id="occupation" placeholder="Student, Buinessman, employed">
+              <input type="text" class="form-control" id="occupation" placeholder="Student, Buinessman, employed" required>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="user@gmail.com">
+              <input type="email" class="form-control" id="email" placeholder="user@gmail.com" required>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">County</label>
-              <input type="text" class="form-control" id="county" placeholder="nairobi,Kakamega,Kisumu">
+              <input type="text" class="form-control" id="county" placeholder="nairobi,Kakamega,Kisumu" required>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">District</label>
-              <input type="text" class="form-control" id="district" placeholder="nakuru,">
+              <input type="text" class="form-control" id="district" placeholder="nakuru," required>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">Location</label>
@@ -189,21 +189,21 @@
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">Postal Address</label>
-              <input type="number" class="form-control" id="paddress">
+              <input type="number" class="form-control" id="paddress" required>
             </div>
 
             <div class="col-md-6 p-2 " >
               <label for="inputCity" class="form-label">Postal code</label>
-              <input type="number" class="form-control" id="pcode"placeholder="eg 00100">
+              <input type="number" class="form-control" id="pcode"placeholder="eg 00100" required>
             </div>
 
             <div class="col-md-6 p-2 " >
               <label for="inputZip" class="form-label">Town/City</label>
-              <input type="text" class="form-control" id="town" placeholder="Nairobi ,Mombasa">
+              <input type="text" class="form-control" id="town" placeholder="Nairobi ,Mombasa" required>
             </div>
 
             <div class="d-grid gap-2 col-6 mx-auto mb-3 mt-3">
-                <button class="btn btn-primary" title="SUBMIT THE KRA FORM FOR PROCESSING" type="button">Submit KRA Form</button>
+                <button class="btn btn-primary" title="SUBMIT THE KRA FORM FOR PROCESSING" type="button">Submit</button>
               </div>
           </form>
     </div>
@@ -235,13 +235,13 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <h5 class="text-light mb-4">Service Links</h5>
-                        <a class="btn btn-link" href="">NEW KRA PIN REGISTRATION </a>
-                        <a class="btn btn-link" href="">TIMS REGISTRATION</a>
-                        <a class="btn btn-link" href="">Our Services</a>
-                        <a class="btn btn-link" href="">DRIVING LICENCE CHECKER</a>
-                        <a class="btn btn-link" href="">NTSA LOGBOOK SEARCH</a>
-                    </div>
+                      <h5 class="text-light mb-4">Service Links</h5>
+                      <a class="btn btn-link" href="../applications/KRA.html">NEW KRA PIN REGISTRATION </a>
+                      <a class="btn btn-link" href="../applications/TimsAccount.html">TIMS REGISTRATION</a>
+                      <a class="btn btn-link" href="../service.html">Our Services</a>
+                      <a class="btn btn-link" href="../applications/driverslicence.html">DRIVING LICENCE CHECKER</a>
+                      <a class="btn btn-link" href="../applications/LogBookSearch.html">NTSA LOGBOOK SEARCH</a>
+                  </div>
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-light mb-4">Popular Links</h5>
                         <a class="btn btn-link" href="about.html">About Us</a>

@@ -135,51 +135,51 @@
 
     <!-- KRA FORM BEGINS HERE -->
     <div class="container-sm">
-        <form class="row g-3 border border-1 w-75 mx-auto">
+        <form class="row g-3 border border-1 w-75 mx-auto" method="POST" action="" enctype="multipart/form-data" name="logbooksearch" id="logbooksearch" >
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">firstName</label>
-              <input type="email" class="form-control" id="lname">
+              <input type="text" class="form-control" id="lname" required>
             </div>
 
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">lastName</label>
-              <input type="password" class="form-control" id="lname">
+              <input type="text" class="form-control" id="lname" required>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">Vehicle Make</label>
-              <input type="password" class="form-control" id="vmake" placeholder=" Van / Saloon car/ Pickup">
+              <input type="text" class="form-control" id="carmake" placeholder=" Van / Saloon car/ Pickup" required>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">Number Plate *</label>
-              <input type="password" class="form-control" id="inputPassword4" placeholder=" KCQ 23T8">
+              <input type="text" class="form-control" id="carReg" placeholder=" KCQ 23T8" required>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">Primary Phone Number For SMS *</label>
-              <input type="password" class="form-control" id="inputPassword4" placeholder=" 0712345678">
+              <input type="number" class="form-control" id="inputPassword4" placeholder=" 0712345678" required>
               <div id="emailHelp" class="form-text">We'll send a notification after we finish your logbook search</div>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">MPESA NUMBER *</label>
-              <input type="password" class="form-control" id="inputPassword4" placeholder=" 0712345678">
+              <input type="number" class="form-control" id="inputPassword4" placeholder=" 0712345678" required>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">MPESA TRANSACTION CODE PAID TO OUR TILL</label>
-              <input type="email" class="form-control" id="inputEmail4"placeholder="MKOH98PD">
+              <input type="text" class="form-control" id="inputEmail4"placeholder="MKOH98PD" required>
               <div id="emailHelp" class="form-text">put mpesa code for payment of 950 to our till.</div>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">WHATSAPP NUMBER</label>
-              <input type="password" class="form-control" id="inputPassword4" placeholder="0711243565">
+              <input type="text" class="form-control" id="inputPassword4" placeholder="0711243565" required>
               <div id="emailHelp" class="form-text">will send you copr of the records to your whatsapp if your email is not working.</div>
             </div>
 
             <div class="col-md-12 p-2 " >
               <label for="inputEmail4" class="form-label">Email [small letters only should be a working email]</label>
-              <input type="email" class="form-control" id="inputEmail4" placeholder="johndoe@gmail.com">
+              <input type="email" class="form-control" id="inputEmail4" placeholder="johndoe@gmail.com" required>
               <div id="emailHelp" class="form-text">The copy of your logbook records will be sent to your email.</div>
             </div>
             <div class="d-grid gap-2 col-6 mx-auto mb-3 mt-3">
-                <button class="btn btn-primary" type="button">Submit KRA Form</button>
+                <button class="btn btn-primary" type="button">Submit</button>
               </div>
           </form>
     </div>
@@ -240,13 +240,13 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <h5 class="text-light mb-4">Service Links</h5>
-                        <a class="btn btn-link" href="">NEW KRA PIN REGISTRATION </a>
-                        <a class="btn btn-link" href="">TIMS REGISTRATION</a>
-                        <a class="btn btn-link" href="">Our Services</a>
-                        <a class="btn btn-link" href="">DRIVING LICENCE CHECKER</a>
-                        <a class="btn btn-link" href="">NTSA LOGBOOK SEARCH</a>
-                    </div>
+                      <h5 class="text-light mb-4">Service Links</h5>
+                      <a class="btn btn-link" href="../applications/KRA.html">NEW KRA PIN REGISTRATION </a>
+                      <a class="btn btn-link" href="../applications/TimsAccount.html">TIMS REGISTRATION</a>
+                      <a class="btn btn-link" href="../service.html">Our Services</a>
+                      <a class="btn btn-link" href="../applications/driverslicence.html">DRIVING LICENCE CHECKER</a>
+                      <a class="btn btn-link" href="../applications/LogBookSearch.html">NTSA LOGBOOK SEARCH</a>
+                  </div>
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-light mb-4">Popular Links</h5>
                         <a class="btn btn-link" href="about.html">About Us</a>

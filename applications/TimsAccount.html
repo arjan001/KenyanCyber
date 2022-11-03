@@ -192,46 +192,46 @@
 
     <!-- TIMS FORM BEGINS HERE -->
     <div class="container-sm">
-        <form class="row g-3 border border-1 w-75 mx-auto">
+        <form class="row g-3 border border-1 w-75 mx-auto" method="POST" action="" enctype="multipart/form-data" name="TimsAccount" id="TimsAccount" >
             <div class="col-md-4 p-2 " >
               <label for="inputEmail4" class="form-label">firstName</label>
-              <input type="email" class="form-control" id="inputEmail4">
+              <input type="text" class="form-control" id="fname">
             </div>
             <div class="col-md-4 p-2 " >
               <label for="inputPassword4" class="form-label">MiddleName</label>
-              <input type="password" class="form-control" id="inputPassword4">
+              <input type="text" class="form-control" id="mname">
             </div>
             <div class="col-md-4 p-2 " >
               <label for="inputPassword4" class="form-label">lastName</label>
-              <input type="text" class="form-control" id="inputPassword4">
+              <input type="text" class="form-control" id="lname">
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">Nationality</label>
-              <input type="text" class="form-control" id="inputEmail4"placeholder="Kenyan">
+              <input type="text" class="form-control" id="nationality"placeholder="Kenyan">
               <div id="nationality" class="form-text">please note we only proces TIMS for kenyan citizent no ALIEN ID'S</div>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">Occupation</label>
-              <input type="text" class="form-control" id="inputPassword4" placeholder="farmer , student, nurse,businessman">
+              <input type="text" class="form-control" id="occupation" placeholder="farmer , student, nurse,businessman">
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">Date of Birth</label>
-              <input type="text" class="form-control" id="inputEmail4"placeholder="24/10/1980">
+              <input type="text" class="form-control" id="dob"placeholder="24/10/1980">
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">Mobile Number</label>
-              <input type="number1" class="form-control" id="number1" placeholder="07123456789">
+              <input type="number" class="form-control" id="mobNumber" placeholder="07123456789">
               <div id="emailHelp" class="form-text">put your primary no that start with 07 this number will be used to open your account</div>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">Mpesa Number</label>
-              <input type="number" class="form-control" id="inputEmail4" placeholder="0787543213">
+              <input type="number" class="form-control" id="MPnumber" placeholder="0787543213">
               <div id="emailHelp" class="form-text">number used to pay the 250 for the order</div>
             </div>
 
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">Mpesa Transaction Code</label>
-              <input type="text" class="form-control" id="inputPassword4" placeholder="qpk65tg23hfq">
+              <input type="text" class="form-control" id="MPcode4" placeholder="qpk65tg23hfq">
               <div id="emailHelp" class="form-text">PLEASE put the code as it appears in your mpesa message eg:0JL22PO66H</div>
             </div>
 
@@ -255,14 +255,14 @@
             <div class="col-md-6 p-2 " >
               <label>Have you ever lost your or changed your First ID</label>
               <div class="form-check mx-2 ">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
                 <label class="form-check-label" for="flexCheckDefault">
                   YES
                 </label>
               </div>
             
               <div class="form-check mx-2 ">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
                 <label class="form-check-label" for="flexCheckDefault">
                   NO
                 </label>
@@ -275,59 +275,59 @@
         
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">YOUR ID SERIAL NUMBER</label>
-              <input type="number" class="form-control" id="inputEmail4" placeholder="your id serial number">
+              <input type="number" class="form-control" id="idserial" placeholder="your id serial number">
               <div id="emailHelp" class="form-text">your id serial number is located on front top left of your ID</div>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">MOTHERS FULL NAMES</label>
-              <input type="text" class="form-control" id="inputPassword4" placeholder="JANE DOE KAMAU">
+              <input type="text" class="form-control" id="mothersname" placeholder="JANE DOE KAMAU">
               <div id="emailHelp" class="form-text">put as it appears on your mothers id card[Required by ntsa for account openning]</div>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">service you are applying for On TIMS</label>
-              <input type="text" class="form-control" id="inputEmail4" placeholder="car transfer ,car inspection,smart dl application">
+              <input type="text" class="form-control" id="service" placeholder="car transfer ,car inspection,smart dl application">
               <div id="emailHelp" class="form-text">this helps us understand which account you need</div>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputemail" class="form-label">email Address</label>
-              <input type="email"class="form-control" id="inputemail"placeholder="user@gmail.com">
+              <input type="email"class="form-control" id="email"placeholder="user@gmail.com">
               <div id="emailHelp" class="form-text">your working email address</div>
             </div>
 
             <div class="col-md-6 p-2 " >
               <label for="inputCity" class="form-label">KRA PIN NUMBER</label>
-              <input type="text" class="form-control" id="inputCity"placeholder="112265789764">
+              <input type="text" class="form-control" id="kraNumber"placeholder="112265789764">
               <div id="emailHelp" class="form-text">ensure the pin is 11 characters long</div>
             </div>
 
             <div class="col-md-6 p-2 " >
               <label for="inputZip" class="form-label">County of Birth</label>
-              <input type="text" class="form-control" id="inputZip" placeholder="Nairobi ,Mombasa">
+              <input type="text" class="form-control" id="county" placeholder="Nairobi ,Mombasa">
             </div>
 
             <div class="col-md-6 p-2 " >
               <label for="inputZip" class="form-label">SubCounty of Birth</label>
-              <input type="text" class="form-control" id="inputZip" placeholder="Bahai,Mvita">
+              <input type="text" class="form-control" id="subcounty" placeholder="Bahai,Mvita">
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputZip" class="form-label">Security qustion:what the village/road name you grew up in</label>
-              <input type="text" class="form-control" id="inputZip" placeholder="Bondeni village/estate">
+              <input type="text" class="form-control" id="securityquiz" placeholder="Bondeni village/estate">
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputZip" class="form-label">Postal Address</label>
-              <input type="number" class="form-control" id="inputZip" placeholder="eg :8444444 type 00 if you dont have">
+              <input type="number" class="form-control" id="paddress" placeholder="eg :8444444 type 00 if you dont have">
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputZip" class="form-label">Postal code</label>
-              <input type="number" class="form-control" id="inputZip" placeholder="eg :00100 type 00 if you dont have">
+              <input type="number" class="form-control" id="pcode" placeholder="eg :00100 type 00 if you dont have">
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputZip" class="form-label">Physical address[place you live now]</label>
-              <input type="text" class="form-control" id="inputZip" placeholder="umoja,westlands,parklands,kabete">
+              <input type="text" class="form-control" id="phyAddress" placeholder="umoja,westlands,parklands,kabete">
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputZip" class="form-label">Town</label>
-              <input type="text" class="form-control" id="inputZip" placeholder="current town you live in now">
+              <input type="text" class="form-control" id="town" placeholder="current town you live in now">
             </div>
 
             <div class="d-grid gap-2 col-6 mx-auto mb-3 mt-3">
@@ -357,13 +357,13 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <h5 class="text-light mb-4">Service Links</h5>
-                        <a class="btn btn-link" href="">NEW KRA PIN REGISTRATION </a>
-                        <a class="btn btn-link" href="">TIMS REGISTRATION</a>
-                        <a class="btn btn-link" href="">Our Services</a>
-                        <a class="btn btn-link" href="">DRIVING LICENCE CHECKER</a>
-                        <a class="btn btn-link" href="">NTSA LOGBOOK SEARCH</a>
-                    </div>
+                      <h5 class="text-light mb-4">Service Links</h5>
+                      <a class="btn btn-link" href="../applications/KRA.html">NEW KRA PIN REGISTRATION </a>
+                      <a class="btn btn-link" href="../applications/TimsAccount.html">TIMS REGISTRATION</a>
+                      <a class="btn btn-link" href="../service.html">Our Services</a>
+                      <a class="btn btn-link" href="../applications/driverslicence.html">DRIVING LICENCE CHECKER</a>
+                      <a class="btn btn-link" href="../applications/LogBookSearch.html">NTSA LOGBOOK SEARCH</a>
+                  </div>
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-light mb-4">Popular Links</h5>
                         <a class="btn btn-link" href="about.html">About Us</a>

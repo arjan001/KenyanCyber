@@ -128,45 +128,45 @@
 
     <!-- KRA FORM BEGINS HERE -->
     <div class="container-sm">
-        <form class="row g-3 border border-1 w-75 mx-auto">
+        <form class="row g-3 border border-1 w-75 mx-auto" method="POST" action="" enctype="multipart/form-data" name="carinspection" id="carinspection" >
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">firstName</label>
-              <input type="text" class="form-control" id="fname">
+              <input type="text" class="form-control" id="fname" required>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">lastName</label>
-              <input type="text" class="form-control" id="lname">
+              <input type="text" class="form-control" id="lname" required>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">mpesa transaction code</label>
-              <input type="text" class="form-control" id="MPcode"placeholder="MKOH98PD">
+              <input type="text" class="form-control" id="MPcode"placeholder="MKOH98PD" required>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">VEHICLE MAKE</label>
-              <input type="text" class="form-control" id="make" placeholder="Van/pickup/trailler/saloon">
+              <input type="text" class="form-control" id="Carmake" placeholder="Van/pickup/trailler/saloon" required>
             </div>
             <div class="col-md-6 p-2 " >
-              <label for="inputEmail4" class="form-label">Car registration Number</label>
-              <input type="text" class="form-control" id="carReg"placeholder="KBD 030G">
+              <label for="inputEmail4" class="form-label">Car Number Plate</label>
+              <input type="text" class="form-control" id="carReg"placeholder="KBD 030G" required>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">Primary phone Number</label>
-              <input type="password" class="form-control" id="mobNumber" placeholder="07123456789">
+              <input type="password" class="form-control" id="mobNumber" placeholder="07123456789" required>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">Mpesa number</label>
-              <input type="email" class="form-control" id="occupation" placeholder="Number used to pay th 250">
+              <input type="email" class="form-control" id="MPnumber" placeholder="Number used to pay th 250" required>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">Email</label>
-              <input type="password" class="form-control" id="email" placeholder="user@gmail.com">
+              <input type="password" class="form-control" id="email" placeholder="user@gmail.com" required>
             </div>
 
 
 
 
             <div class="d-grid gap-2 col-6 mx-auto mb-3 mt-3">
-                <button class="btn btn-primary" type="button">Submit KRA Form</button>
+                <button class="btn btn-primary" type="button">Submit</button>
               </div>
           </form>
     </div>
