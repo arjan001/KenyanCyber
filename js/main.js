@@ -101,8 +101,6 @@ $("#contactform").submit(function(event) {
         type: "post",
         data: values ,
         success: function (response) {
-            console.log(response);
-            // return;
             if (response == "success") {
                 document.getElementById('response').style.display = "block";
                 document.getElementById('response').style.color = "green";

@@ -1,17 +1,19 @@
 <?php
-	$data = "Name: ".$_POST['name']."<br /><br />Email: ".$_POST['email']."<br /><br />Message<br />".$_POST['message'];
+	$data = "Name: ".$_POST['name']."<br /><br />Email: ".$_POST['email']."<br /><br />Message: ".$_POST['message'];
 	require 'phpmailer/PHPMailerAutoload.php';
 	$mail= new PHPMailer;
-	$mail->SMTPDebug = 1;
+//	$mail->SMTPDebug = 1;
 	$mail->SMTPSecure = 'ssl';
-	$mail->Host = 'smtp.gmail.com';
+	$mail->Host = 'mail.smartcityplots.co.ke';
 	$mail->Port = 465;
 	$mail->isSMTP();
 	$mail->SMTPAuth=true;
-	$mail->Username='arjannky@gmail.com';
-	$mail->Password='khasiala';
-	$mail->setFrom('arjannky@gmail.com','Website Enquiry From KenyanCyber');
-	$mail->addAddress('arjannky@gmail.com');
+	$mail->Username='test@smartcityplots.co.ke';
+	$mail->Password='^Q&(;rQfBGEF';
+	$mail->setFrom('test@smartcityplots.co.ke','Website Enquiry From KenyanCyber');
+    $mail->addAddress('abedimuange@gmail.com');
+    $mail->addAddress('emmanuelmuema52@gmail.com');
+    $mail->addAddress('nyongesaedwin018@gmail.com');
 	$mail->isHTML(true);
 	$mail->Subject=$_POST['subject'];
 	$mail->Body=$data;
