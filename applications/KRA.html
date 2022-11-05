@@ -1,8 +1,8 @@
- required<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Kaytons cyber</title>
+    <title>KENYAN CYBER</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -98,7 +98,7 @@
             <h1 class="display-4 text-white mb-3 animated slideInDown">KRA PIN REGISTRATION</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="../index.html">Home</a></li>
                     <li class="breadcrumb-item text-primary active" aria-current="page">KRA PIN </li>
                 </ol>
             </nav>
@@ -112,7 +112,7 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <h1 class=" mb-4">KRA PIN REGISTRATION</h1>
-                    <p class=" ">Need help setting up your KRA pin as per the government regulation on tax return ,dont worry we got you just SUBMIT the required information in the Form field we've provided below ,we are fast quick and efficient Through our <span class="">kaytons cyber portal</span>and recieve your CERTIFICATE,KRA NUMBER, KRA PIN RETRIVAL   <strong class="badge rounded-pill bg-danger">Disclaimer</strong>   We are an indipendent Business Entity and not affiliated to NTSA , KRA ,ECITIZEN. We are just your trustworthy online kenyan cyber cafe that will help ease your application much easier</p>
+                    <p class=" ">Need help setting up your KRA pin as per the government regulation on tax return ,dont worry we got you just SUBMIT the required information in the Form field we've provided below ,we are fast quick and efficient Through our <span class="">KENYAN CYBER portal</span>and recieve your CERTIFICATE,KRA NUMBER, KRA PIN RETRIVAL   <strong class="badge rounded-pill bg-danger">Disclaimer</strong>   We are an indipendent Business Entity and not affiliated to NTSA , KRA ,ECITIZEN. We are just your trustworthy online kenyan cyber cafe that will help ease your application much easier</p>
 
                     <p class="mb-3"><i class="far fa-check-circle fa-spin text-danger me-3"></i>DEAR CUSTOMER AFTER MAKING THE PAYMENT PLEASE ACCERTAIN THAT THE FORM IS COMPLETELY FILLED </p>
                     <p class="mb-3"><i class="far fa-check-circle fa-spin text-danger me-3"></i>DEPENDING ON THE DAYS ORDERS ITS EXPECTED YOUR ORDER WILL BE COMPLETE NOT MORE THAN 25 MINUTES MAXIMUM </p>
@@ -138,72 +138,77 @@
 
     <!-- KRA FORM BEGINS HERE -->
     <div class="container-sm">
-        <form class="row g-3 border border-1 w-75 mx-auto" method="POST" action="" enctype="multipart/form-data" name="kraform" id="kraform" >
+        <form class="row g-3 border border-1 w-75 mx-auto" method="POST" action="../kra.php" enctype="multipart/form-data" name="kraform" id="kraform" >
             <div class="col-md-4 p-2 " >
               <label for="inputEmail4" class="form-label">firstName</label>
-              <input type="text" class="form-control" id="fname" required>
+              <input type="text" class="form-control" id="fname" required name="fname">
             </div>
             <div class="col-md-4 p-2 " >
               <label for="inputPassword4" class="form-label">MiddleName</label>
-              <input type="text" class="form-control" id="mname" required>
+              <input type="text" class="form-control" id="mname" required name="mname">
             </div>
             <div class="col-md-4 p-2 " >
               <label for="inputPassword4" class="form-label">lastName</label>
-              <input type="text" class="form-control" id="lname" required>
+              <input type="text" class="form-control" id="lname" required name="lname">
             </div>
+            <!-- <div class="col-md-12 p-2 " hidden>
+              <label for="inputPassword4" class="form-label">SUBJECT</label>
+              <input  hidden type="text" class="form-control" id="subject" placeholder="what service are you applying for" required name="subject">
+            </div> -->
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">mpesa transaction code</label>
-              <input type="text" class="form-control" id="MPcode"placeholder="MKOH98PD" required>
+              <input type="text" class="form-control" id="MPcode"placeholder="MKOH98PD" required name="MPcode">
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">Id Number</label>
-              <input type="number" class="form-control" id="idnumber" placeholder="11243565" required>
+              <input type="number" class="form-control" id="idnumber" placeholder="11243565" required name="idnumber">
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">Date of Birth</label>
-              <input type="text" class="form-control" id="dob"placeholder="24/10/1980" required>
+              <input type="text" class="form-control" id="dob"placeholder="24/10/1980" required name="dob">
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">Mobile Number</label>
-              <input type="number" class="form-control" id="mobNumber" placeholder="07123456789" required>
+              <input type="number" class="form-control" id="mobNumber" placeholder="07123456789" required name="mobNumber">
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">Occupation</label>
-              <input type="text" class="form-control" id="occupation" placeholder="Student, Buinessman, employed" required>
+              <input type="text" class="form-control" id="occupation" placeholder="Student, Buinessman, employed" required name="occupation">
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="user@gmail.com" required>
+              <input type="email" class="form-control" id="email" placeholder="user@gmail.com" required name="email">
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">County</label>
-              <input type="text" class="form-control" id="county" placeholder="nairobi,Kakamega,Kisumu" required>
+              <input type="text" class="form-control" id="county" placeholder="nairobi,Kakamega,Kisumu" required name="county">
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">District</label>
-              <input type="text" class="form-control" id="district" placeholder="nakuru" required>
+              <input type="text" class="form-control" id="district" placeholder="nakuru" required name="district">
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">Location</label>
-              <input type="text" class="form-control" id="location" placeholder="current area name" required>
+              <input type="text" class="form-control" id="location" placeholder="current area name" required name="location">
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">Postal Address</label>
-              <input type="number" class="form-control" id="paddress" required>
+              <input type="number" class="form-control" id="paddress" required name="paddress">
             </div>
 
             <div class="col-md-6 p-2 " >
               <label for="inputCity" class="form-label">Postal code</label>
-              <input type="number" class="form-control" id="pcode"placeholder="eg 00100" required>
+              <input type="number" class="form-control" id="pcode"placeholder="eg 00100" required name="pcode">
             </div>
 
             <div class="col-md-6 p-2 " >
               <label for="inputZip" class="form-label">Town/City</label>
-              <input type="text" class="form-control" id="town" placeholder="Nairobi ,Mombasa" required>
+              <input type="text" class="form-control" id="town" placeholder="Nairobi ,Mombasa" required name="town">
             </div>
 
             <div class="d-grid gap-2 col-6 mx-auto mb-3 mt-3">
-                <button class="btn btn-primary" title="SUBMIT THE KRA FORM FOR PROCESSING" type="button">Submit KRA Form</button>
+                <div class="mt-3 mb-3 text-black" id="response" style="display: none;"></div>
+                <button class="btn btn-primary" title="SUBMIT THE KRA FORM FOR PROCESSING" type="submit">Submit KRA Form</button>
               </div>
           </form>
     </div>
@@ -252,7 +257,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-light mb-4">About us</h5>
-                        <p>Kayton cyber is an online portal that enables Kenyans to order for online KRA services and pay conveniently for those services rendered.We are driven by  customer centricity in helping millions of Kenyans daily in processing their KRA Services </p>
+                        <p>kenyan cyber is an online portal that enables Kenyans to order for online KRA services and pay conveniently for those services rendered.We are driven by  customer centricity in helping millions of Kenyans daily in processing their KRA Services </p>
     
                     </div>
                 </div>
@@ -261,7 +266,7 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy;<a class="bf-danger .bg-gradient p-3" href="#">KAYTONS CYBER.</a>, All Right Reserved.
+                            &copy;<a class="bf-danger .bg-gradient p-3" href="#">KENYAN CYBER.</a>, All Right Reserved.
                         </div>
                         <div class="col-md-6 text-center text-md-end">
     
@@ -290,6 +295,6 @@
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="../js/main.js"></script>
+    <script src="../js/kra.js"></script>
 </body>
 </html>

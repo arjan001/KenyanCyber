@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Kaytons cyber</title>
+    <title>KENYAN CYBER</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -128,45 +128,47 @@
 
     <!-- KRA FORM BEGINS HERE -->
     <div class="container-sm">
-        <form class="row g-3 border border-1 w-75 mx-auto" method="POST" action="" enctype="multipart/form-data" name="carinspection" id="carinspection" >
+    <form  method="POST" action="car.php" enctype="multipart/form-data" name="carinspection" id="carinspection"class="row g-3 border border-1 w-75 mx-auto">
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">firstName</label>
-              <input type="text" class="form-control" id="fname" required>
+              <input type="text" class="form-control" id="fname" name="fname" required>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">lastName</label>
-              <input type="text" class="form-control" id="lname" required>
+              <input type="text" class="form-control" id="lname" name="lname" required>
+            </div>
+            <div class="col-md-12 p-2 ">
+              <label for="inputPassword4" class="form-label">SUBJECT</label>
+              <input  type="text" class="form-control" id="subject" name="subject" required placeholder="what are you applying for">
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">mpesa transaction code</label>
-              <input type="text" class="form-control" id="MPcode"placeholder="MKOH98PD" required>
+              <input type="text" class="form-control" id="MPcode"placeholder="MKOH98PD" name="MPcode" required>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">VEHICLE MAKE</label>
-              <input type="text" class="form-control" id="Carmake" placeholder="Van/pickup/trailler/saloon" required>
+              <input type="text" class="form-control" id="Carmake" placeholder="Van/pickup/trailler/saloon" name="Carmake" required>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">Car Number Plate</label>
-              <input type="text" class="form-control" id="carReg"placeholder="KBD 030G" required>
+              <input type="text" class="form-control" id="carReg"placeholder="KBD 030G" name="carReg" required>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">Primary phone Number</label>
-              <input type="password" class="form-control" id="mobNumber" placeholder="07123456789" required>
+              <input type="text" class="form-control" id="mobNumber" placeholder="07123456789" name="mobNumber" required>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">Mpesa number</label>
-              <input type="email" class="form-control" id="MPnumber" placeholder="Number used to pay th 250" required>
+              <input type="text" class="form-control" id="MPnumber" placeholder="Number used to pay th 250" name="MPnumber" required>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">Email</label>
-              <input type="password" class="form-control" id="email" placeholder="user@gmail.com" required>
+              <input type="email" class="form-control" id="email" placeholder="user@gmail.com" name="email" required>
             </div>
 
-
-
-
             <div class="d-grid gap-2 col-6 mx-auto mb-3 mt-3">
-                <button class="btn btn-primary" type="button">Submit</button>
+                <div class="mt-3 mb-3 text-black" id="response" style="display: none;"></div>
+                <button class="btn btn-primary" type="submit">Submit</button>
               </div>
           </form>
     </div>
@@ -231,7 +233,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-light mb-4">About us</h5>
-                        <p>Kayton cyber is an online portal that enables Kenyans to order for online KRA services and pay conveniently for those services rendered.We are driven by  customer centricity in helping millions of Kenyans daily in processing their KRA Services </p>
+                        <p>kenyan cyber is an online portal that enables Kenyans to order for online KRA services and pay conveniently for those services rendered.We are driven by  customer centricity in helping millions of Kenyans daily in processing their KRA Services </p>
     
                     </div>
                 </div>
@@ -240,7 +242,7 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy;<a class="bf-danger .bg-gradient p-3" href="#">KAYTONS CYBER.</a>, All Right Reserved.
+                            &copy;<a class="bf-danger .bg-gradient p-3" href="#">KENYAN CYBER.</a>, All Right Reserved.
                         </div>
                         <div class="col-md-6 text-center text-md-end">
     
@@ -268,6 +270,9 @@
     <script src="../lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="../js/main.js"></script>
+    <!-- <script src="../js/main.js"></script> -->
+    <script src="../js/car.js"></script>
+
+
 </body>
 </html>

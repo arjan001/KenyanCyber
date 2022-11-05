@@ -1,8 +1,14 @@
 <?php
 	$data = 
-	"Name: ".$_POST['name']."<br/><br/>
-	Email: ".$_POST['email']."<br /><br/>
-	Message: ".$_POST['message'];
+	"FIRST Name: ".$_POST['fname'].
+	"<br/><br/>LAST NAME: ".$_POST['lname'].
+	"<br/><br/>MPESA TRANSACTION CODE: ".$_POST['MPcode'].
+	"<br/><br/>CAR MAKE: ".$_POST['carMake'].
+	"<br/><br/>CAR REGISTRATION NUMBER : ".$_POST['carReg'].
+	"<br/><br/>MOBILE NUMBER: ".$_POST['mobNumber'].
+	"<br/><br/>MPESA NUMBER: ".$_POST['MPnumber'].
+	"<br/><br/>WHATSAPP NUMBER: ".$_POST['whatsappNumber'].
+	"<br/><br/>EMAIL: ".$_POST['email'];
 	require 'phpmailer/PHPMailerAutoload.php';
 	$mail= new PHPMailer;
 //	$mail->SMTPDebug = 1;
@@ -18,7 +24,7 @@
     $mail->addAddress('emmanuelmuema52@gmail.com');
     $mail->addAddress('nyongesaedwin018@gmail.com');
 	$mail->isHTML(true);
-	$mail->Subject=$_POST['subject'];
+	// $mail->Subject=$_POST['subject'];
 	$mail->Body=$data;
 	if(!$mail->send()) {
 		echo "failed";

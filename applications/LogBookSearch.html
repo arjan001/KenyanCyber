@@ -133,57 +133,66 @@
     </div>
     <!-- About kra End -->
 
-    <!-- KRA FORM BEGINS HERE -->
+    <!-- LOGBOOK FORM BEGINS HERE -->
     <div class="container-sm">
-        <form class="row g-3 border border-1 w-75 mx-auto" method="POST" action="" enctype="multipart/form-data" name="logbooksearch" id="logbooksearch" >
+        <form class="row g-3 border border-1 w-75 mx-auto" method="POST" action="../logbook.php" enctype="multipart/form-data" name="logbooksearch" id="logbooksearch">
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">firstName</label>
-              <input type="text" class="form-control" id="lname" required>
+              <input type="text" class="form-control" id="fname" required placeholder="john" name="fname">
             </div>
 
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">lastName</label>
-              <input type="text" class="form-control" id="lname" required>
+              <input type="text" class="form-control" id="lname" required placeholder="doe" name="lname">
             </div>
-            <div class="col-md-6 p-2 " >
-              <label for="inputPassword4" class="form-label">Vehicle Make</label>
-              <input type="text" class="form-control" id="carmake" placeholder=" Van / Saloon car/ Pickup" required>
-            </div>
+
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">Number Plate *</label>
-              <input type="text" class="form-control" id="carReg" placeholder=" KCQ 23T8" required>
+              <input type="text" class="form-control" id="carReg" placeholder=" KCQ 23T8" required name="carReg">
+              <div id="emailHelp" class="form-text">vehicle registration number CAPITAL LETTERS ONLY</div>
+            </div>
+            <div class="col-md-6 p-2 " >
+              <label for="inputPassword4" class="form-label">CAR MAKE *</label>
+              <input type="text" class="form-control" id="Carmake" placeholder=" VAN/SALOON/BUS/PICKUO" required name="Carmake">
+              <div id="emailHelp" class="form-text">vehicle registration number CAPITAL LETTERS ONLY</div>
+            </div>
+            <div class="col-md-12 p-2 " >
+              <label for="inputPassword4" class="form-label">SUBJECT *</label>
+              <input type="text" class="form-control" id="Carmake" placeholder=" What are are you applying for" required name="subject">
+              <div id="emailHelp" class="form-text">type inside the bubject field logbook search</div>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">Primary Phone Number For SMS *</label>
-              <input type="number" class="form-control" id="inputPassword4" placeholder=" 0712345678" required>
+              <input type="number" class="form-control" id="mobNumber" placeholder=" 0712345678" required name="mobNumber">
               <div id="emailHelp" class="form-text">We'll send a notification after we finish your logbook search</div>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">MPESA NUMBER *</label>
-              <input type="number" class="form-control" id="inputPassword4" placeholder=" 0712345678" required>
+              <input type="number" class="form-control" id="MPnumber" placeholder=" 0712345678" required name="MPnumber">
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">MPESA TRANSACTION CODE PAID TO OUR TILL</label>
-              <input type="text" class="form-control" id="inputEmail4"placeholder="MKOH98PD" required>
+              <input type="text" class="form-control" id="MPcode"placeholder="MKOH98PD" required name="MPcode">
               <div id="emailHelp" class="form-text">put mpesa code for payment of 950 to our till.</div>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">WHATSAPP NUMBER</label>
-              <input type="text" class="form-control" id="inputPassword4" placeholder="0711243565" required>
-              <div id="emailHelp" class="form-text">will send you copr of the records to your whatsapp if your email is not working.</div>
+              <input type="number" class="form-control" id="whatsappNumber" placeholder="0711243565" required name="whatsappNumber">
+              <div id="emailHelp" class="form-text">will send you copy of the records to your whatsapp if your email is not working.</div>
             </div>
 
             <div class="col-md-12 p-2 " >
               <label for="inputEmail4" class="form-label">Email [small letters only should be a working email]</label>
-              <input type="email" class="form-control" id="inputEmail4" placeholder="johndoe@gmail.com" required>
+              <input type="email" class="form-control" id="email" placeholder="johndoe@gmail.com" required name="email">
               <div id="emailHelp" class="form-text">The copy of your logbook records will be sent to your email.</div>
             </div>
             <div class="d-grid gap-2 col-6 mx-auto mb-3 mt-3">
-                <button class="btn btn-primary" type="button">Submit</button>
+                <div class="mt-3 mb-3 text-black" id="response" style="display: none;" name="response"></div>
+                <button class="btn btn-primary" type="submit">Submit</button>
               </div>
           </form>
     </div>
-     <!-- KRA FORM ENDS HERE -->
+     <!-- LOGBOOK FORM ENDS HERE -->
 
      <!-- ACORDION START -->
 
@@ -257,7 +266,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-light mb-4">About us</h5>
-                        <p>Kayton cyber is an online portal that enables Kenyans to order for online KRA services and pay conveniently for those services rendered.We are driven by  customer centricity in helping millions of Kenyans daily in processing their KRA Services </p>
+                        <p>kenyan cyber is an online portal that enables Kenyans to order for online KRA services and pay conveniently for those services rendered.We are driven by  customer centricity in helping millions of Kenyans daily in processing their KRA Services </p>
     
                     </div>
                 </div>
@@ -266,7 +275,7 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy;<a class="bf-danger .bg-gradient p-3" href="#">KAYTONS CYBER.</a>, All Right Reserved.
+                            &copy;<a class="bf-danger .bg-gradient p-3" href="#">KENYAN CYBER.</a>, All Right Reserved.
                         </div>
                         <div class="col-md-6 text-center text-md-end">
     
@@ -283,6 +292,8 @@
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom"><i class="bi bi-arrow-up"></i></a>
 
 
+
+       
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -294,6 +305,6 @@
     <script src="../lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="../js/main.js"></script>
+   <script src="../js/logbook.js"></script>
 </body>
 </html>

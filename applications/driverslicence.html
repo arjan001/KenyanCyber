@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Kaytons cyber</title>
+    <title>KENYAN CYBER</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -163,44 +163,54 @@
 
     <!-- DRIVERSLICENCE FORM BEGINS HERE -->
     <div class="container-sm">
-        <form class="row g-3 border border-1 w-75 mx-auto" method="POST" action="" enctype="multipart/form-data" name="driverslicence"  id="driverslicence" >
+        <form class="row g-3 border border-1 w-75 mx-auto" method="POST" action="../driverslicence.php" enctype="multipart/form-data" name="driverslicence"  id="driverslicence" >
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">FirstName</label>
-              <input type="text" class="form-control" required id="fname" required>
+              <input type="text" class="form-control" required id="fname" name="fname">
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">lastName</label>
-              <input type="text" class="form-control" required id="lname" required>
+              <input type="text" class="form-control" required id="lname" name="lname">
             </div>
+
+            <div class="col-md-12 p-2 ">
+              <label for="inputPassword4" class="form-label">SUBJECT</label>
+              <input type="text" class="form-control" id="subject" required name="subject"placeholder="what service are you applying for">
+            </div>
+
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">Date of Birth</label>
-              <input type="text" class="form-control" required id="dob"placeholder="21/09/1980" required>
+              <input type="text" class="form-control" required id="dob"placeholder="dd/mm/yyyy" name="dob">
               <div id="emailHelp" class="form-text">put as it appears on your id card</div>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">Id Number</label>
-              <input type="number" class="form-control" required id="idnumber" placeholder="24243565" required>
+              <input type="number" class="form-control" required id="idnumber" placeholder="24243565" name="idnumber">
+              <div id="emailHelp" class="form-text">personal id Number</div>
+            </div>
+            <div class="col-md-6 p-2 " >
+              <label for="inputEmail4" class="form-label">Driving Licence Number</label>
+              <input type="text" class="form-control" required id="Dlicence" placeholder="EG:FQR074LN" name="Dlicence">
+            </div>
+            <div class="col-md-6 p-2 " >
+              <label for="inputEmail4" class="form-label">email address</label>
+              <input type="text" class="form-control" required id="email" placeholder="user@gmail.com" name="email">
+              <div id="emailHelp" class="form-text">will send you a confirmation email of your results</div>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">Mpesa Transaction Code</label>
-              <input type="text" class="form-control" required id="MPcode"placeholder="pk34h68dci54" required>
+              <input type="text" class="form-control" required id="MPcode"placeholder="pk34h68dci54" required name="MPcode">
               <div id="emailHelp" class="form-text">code you recieve after making payment to out till 7055155</div>
             </div>
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">Mpesa Phone Number</label>
-              <input type="number" class="form-control" required id="MPnumber" placeholder="07123456789" required>
+              <input type="number" class="form-control" required id="MPnumber" placeholder="07123456789" name="MPnumber">
+              <div id="emailHelp" class="form-text">the number used to pay the ksh 250 cyber fee</div>
             </div>
-            <div class="col-md-6 p-2 " >
-              <label for="inputEmail4" class="form-label">Driving Licence Number</label>
-              <input type="text" class="form-control" required id="Dlicence" placeholder="EG:FQR074LN" required>
-            </div>
-            <div class="col-md-6 p-2 " >
-              <label for="inputEmail4" class="form-label">email address</label>
-              <input type="text" class="form-control" required id="email" placeholder="user@gmail.com" required>
-              <div id="emailHelp" class="form-text">will send you a confirmation email of your results</div>
-            </div>
+
             <div class="d-grid gap-2 col-6 mx-auto mb-3 mt-3">
-                <button class="btn btn-primary" type="button">Submit</button>
+              <div class="mt-3 mb-3 text-black" id="response" style="display: none;" name="response"></div>
+                <button class="btn btn-primary" type="submit">Submit</button>
               </div>
           </form>
     </div>
@@ -241,7 +251,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-light mb-4">About us</h5>
-                        <p>Kayton cyber is an online portal that enables Kenyans to order for online KRA services and pay conveniently for those services rendered.We are driven by  customer centricity in helping millions of Kenyans daily in processing their KRA Services </p>
+                        <p>kenyan cyber is an online portal that enables Kenyans to order for online KRA services and pay conveniently for those services rendered.We are driven by  customer centricity in helping millions of Kenyans daily in processing their KRA Services </p>
     
                     </div>
                 </div>
@@ -250,7 +260,7 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy;<a class="bf-danger .bg-gradient p-3" href="#">KAYTONS CYBER.</a>, All Right Reserved.
+                            &copy;<a class="bf-danger .bg-gradient p-3" href="#">KENYAN CYBER.</a>, All Right Reserved.
                         </div>
                         <div class="col-md-6 text-center text-md-end">
     
@@ -278,6 +288,6 @@
     <script src="../lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="../js/main.js"></script>
+    <script src="../js/driverslicence.js"></script>
 </body>
 </html>
