@@ -12,7 +12,7 @@ later add more accordion items on thre kra form page
 Included loader on the page 
 main color scheme on the cyber webpage is gren ,light,linear dark and blue
 ...changedand rrestructured some js links to make page load faster
-included a simple gallery page
+included a simple Gallery page
 included a  sticky navigation bar on page scroll
 research about more vehicle makes to include in th logbook frm placeholder
 added a privacy polocy page,cookies concent page,terms and conditions page
