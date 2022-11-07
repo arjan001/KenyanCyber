@@ -104,7 +104,7 @@ html {
 }
 
 .navbar .navbar-brand img {
-    max-height: 50px;
+    max-height: 40px;
 }
 
 .navbar .dropdown-toggle::after {
@@ -173,6 +173,14 @@ html {
     background-size: cover;
     background-attachment: fixed;
 }
+
+.about-bg {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/4.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+}
+
 .logbook-bg {
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/NTSA-Motor-Vehicle-Search-Kenya-car-logbook-search-verhicle-ownership.webp) center center no-repeat;
     background-size: cover;

@@ -127,7 +127,7 @@
                     <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>GO TO MPESA</p>
                         <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>LIPA NA MPESA </p>
                         <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>PAYBILL > BUY GOODS & SERVICES</p>
-                        <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>ill Number: 7055155. MILLER MOSES MASIKA</p>
+                        <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>ill Number: 7055159. MILLER MOSES MASIKA</p>
                         <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>ENTER CYBER SERVICE FEE <em class="badge bg-dark p-2 rounded-pill">200</em></p>
                         <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>MAKE SURE MPESA NUMBER IS SAME AS MOBILE NUMBER </p>
                 </div>
@@ -138,7 +138,7 @@
 
     <!-- KRA FORM BEGINS HERE -->
     <div class="container-sm">
-        <form class="row g-3 border border-1 w-75 mx-auto" method="POST" action="../kra.php" enctype="multipart/form-data" name="kraform" id="kraform" >
+        <form class="row g-3 border border-1 w-75 mx-auto" method= "POST" action="../kra.php" enctype="multipart/form-data" name="kraform" id="kraform" >
             <div class="col-md-4 p-2 " >
               <label for="inputEmail4" class="form-label">firstName</label>
               <input type="text" class="form-control" id="fname" required name="fname">
@@ -151,10 +151,12 @@
               <label for="inputPassword4" class="form-label">lastName</label>
               <input type="text" class="form-control" id="lname" required name="lname">
             </div>
-            <!-- <div class="col-md-12 p-2 " hidden>
+
+            <div class="col-md-12 p-2 " hidden>
               <label for="inputPassword4" class="form-label">SUBJECT</label>
-              <input  hidden type="text" class="form-control" id="subject" placeholder="what service are you applying for" required name="subject">
-            </div> -->
+              <input disabled type="text" class="form-control disabled" id="subject" placeholder="what service are you applying for" required name="subject">
+            </div>
+
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">mpesa transaction code</label>
               <input type="text" class="form-control" id="MPcode"placeholder="MKOH98PD" required name="MPcode">
@@ -207,8 +209,7 @@
             </div>
 
             <div class="d-grid gap-2 col-6 mx-auto mb-3 mt-3">
-                <div class="mt-3 mb-3 text-black" id="response" style="display: none;"></div>
-                <button class="btn btn-primary" title="SUBMIT THE KRA FORM FOR PROCESSING" type="submit">Submit KRA Form</button>
+                <button class="btn btn-primary" type="submit">Submit</button>
               </div>
           </form>
     </div>

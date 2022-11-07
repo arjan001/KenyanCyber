@@ -86,7 +86,9 @@
     });
     
 })(jQuery);
-$("#logbooksearch").submit(function(event) {
+
+// supposed to replace current id with new id #logbook
+$("#contactform").submit(function(event) {
     event.preventDefault();
     var values = $(this).serialize();
     document.getElementById('response').style.display = "block";
@@ -104,18 +106,11 @@ $("#logbooksearch").submit(function(event) {
                 document.getElementById('response').style.color = "green";
                 document.getElementById('response').style.fontSize = "20px";
                 document.getElementById('response').style.fontWeight = "350";
-                document.getElementById('response').innerHTML = 'Form sent successfully';
-                document.getElementById('fname').value = "";
-                document.getElementById('lname').value = "";
-                document.getElementById('subject').value = "";
-                document.getElementById('MPcode').value = "";
-                document.getElementById('carMake').value = "";
-                document.getElementById('carReg').value = "";
-                document.getElementById('mobNumber').value = "";
-                document.getElementById('MPnumber').value = "";
-                document.getElementById('whatsappNumber').value = "";
+                document.getElementById('response').innerHTML = 'Enquiry sent successfully';
+                document.getElementById('name').value = "";
                 document.getElementById('email').value = "";
-
+                document.getElementById('subject').value = "";
+                document.getElementById('message').value = "";
                 setTimeout(function() {
                     $('#response').fadeOut('fast');
                 }, 5000);
@@ -125,18 +120,11 @@ $("#logbooksearch").submit(function(event) {
                 document.getElementById('response').style.color = "red";
                 document.getElementById('response').style.fontSize = "20px";
                 document.getElementById('response').style.fontWeight = "350"
-                document.getElementById('response').innerHTML = 'Failed. Try again please';
-                document.getElementById('fname').value = "";
-                document.getElementById('lname').value = "";
-                document.getElementById('subject').value = "";
-                document.getElementById('MPcode').value = "";
-                document.getElementById('carMake').value = "";
-                document.getElementById('carReg').value = "";
-                document.getElementById('mobNumber').value = "";
-                document.getElementById('MPnumber').value = "";
-                document.getElementById('whatsappNumber').value = "";
+                document.getElementById('response').innerHTML = 'Failed. Try again later';
+                document.getElementById('name').value = "";
                 document.getElementById('email').value = "";
-
+                document.getElementById('subject').value = "";
+                document.getElementById('message').value = "";
                 setTimeout(function() {
                     $('#response').fadeOut('fast');
                 }, 5000);
@@ -144,4 +132,3 @@ $("#logbooksearch").submit(function(event) {
         }
     });
 });
-

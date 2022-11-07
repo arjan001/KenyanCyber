@@ -5,7 +5,7 @@
 	Message: ".$_POST['message'];
 	require 'phpmailer/PHPMailerAutoload.php';
 	$mail= new PHPMailer;
-//	$mail->SMTPDebug = 1;
+	$mail->SMTPDebug = 1;
 	$mail->SMTPSecure = 'ssl';
 	$mail->Host = 'mail.smartcityplots.co.ke';
 	$mail->Port = 465;

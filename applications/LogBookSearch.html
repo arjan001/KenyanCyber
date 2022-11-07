@@ -123,7 +123,7 @@
                   
                     <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Go to your mpesa menu Select lipa na MPESA</p>
                     <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>select Buy Goods & Services</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>enter till number (7055155.) </p>
+                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>enter till number (7055159.) </p>
                     <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Enter amount: ksh950</p>
                     <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Enter your pin and confirm Payment</p>
                     <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>AFTER PAYMENT BE SURE TO FILL THE FORM BELOW </p>
@@ -135,7 +135,7 @@
 
     <!-- LOGBOOK FORM BEGINS HERE -->
     <div class="container-sm">
-        <form class="row g-3 border border-1 w-75 mx-auto" method="POST" action="../logbook.php" enctype="multipart/form-data" name="logbooksearch" id="logbooksearch">
+        <form class="row g-3 border border-1 w-75 mx-auto" method="POST" action="../logbook.php" enctype="multipart/form-data" name="logbook" id="logbook">
             <div class="col-md-6 p-2 " >
               <label for="inputEmail4" class="form-label">firstName</label>
               <input type="text" class="form-control" id="fname" required placeholder="john" name="fname">
@@ -156,11 +156,13 @@
               <input type="text" class="form-control" id="Carmake" placeholder=" VAN/SALOON/BUS/PICKUO" required name="Carmake">
               <div id="emailHelp" class="form-text">vehicle registration number CAPITAL LETTERS ONLY</div>
             </div>
-            <div class="col-md-12 p-2 " >
-              <label for="inputPassword4" class="form-label">SUBJECT *</label>
-              <input type="text" class="form-control" id="Carmake" placeholder=" What are are you applying for" required name="subject">
-              <div id="emailHelp" class="form-text">type inside the bubject field logbook search</div>
+
+            <div class="col-md-12 p-2 ">
+              <label for="inputPassword4" class="form-label">SUBJECT</label>
+              <input  type="text" readonly class="form-control disabled" id="subject" placeholder="what service are you applying for" required name="subject" value="logbook search">
+              <!-- <div id="emailHelp" class="form-text">type inside the bubject field logbook search</div> -->
             </div>
+
             <div class="col-md-6 p-2 " >
               <label for="inputPassword4" class="form-label">Primary Phone Number For SMS *</label>
               <input type="number" class="form-control" id="mobNumber" placeholder=" 0712345678" required name="mobNumber">
@@ -183,12 +185,12 @@
 
             <div class="col-md-12 p-2 " >
               <label for="inputEmail4" class="form-label">Email [small letters only should be a working email]</label>
-              <input type="email" class="form-control" id="email" placeholder="johndoe@gmail.com" required name="email">
+              <input type="email" class="form-control"placeholder="johndoe@gmail.com" required id="email" name="email">
               <div id="emailHelp" class="form-text">The copy of your logbook records will be sent to your email.</div>
             </div>
             <div class="d-grid gap-2 col-6 mx-auto mb-3 mt-3">
-                <div class="mt-3 mb-3 text-black" id="response" style="display: none;" name="response"></div>
-                <button class="btn btn-primary" type="submit">Submit</button>
+              <div class="mt-3 mb-3 text-black" id="response" style="display: none;" name="response"></div>
+                <button class="btn btn-primary" type="submit" >Submit</button>
               </div>
           </form>
     </div>
@@ -305,6 +307,6 @@
     <script src="../lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- Template Javascript -->
-   <script src="../js/logbook.js"></script>
+   <script src="../js/main.js"></script>
 </body>
 </html>

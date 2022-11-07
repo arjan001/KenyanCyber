@@ -1,6 +1,6 @@
 <?php
 	$data = 
-	"Name: ".$_POST['fname'].
+	"FIRSTName: ".$_POST['fname'].
 	"<br/><br/>LAST NAME: ".$_POST['lname'].
 	"<br/><br/>MIDDLE NAME: ".$_POST['mname'].
 	"<br/><br/>MPESA TRANSACTION CODE: ".$_POST['MPcode'].
